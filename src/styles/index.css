@@ -1,0 +1,112 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 40px;
+    font-family: 'Open Sans', sans-serif;
+    /* Gradient background animation */
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 90s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+nav {
+	width: 100%;
+	float: left;
+	margin: 0 0 1em 0;
+	padding: 0;
+	background-color: #23a6d5;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    margin: 2vh;
+    font-size: 80px;
+}
+
+li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 2vh;
+}
+
+li span {
+    margin-right: 1vw;
+    font-size: 50px;
+}
+
+.add-tasks {
+    display: flex;
+    align-items: center;
+}
+
+button {
+    font-size: 20px;
+}
+
+input[type="text"] {
+    margin: 3vh;
+    margin-right: 10px;
+}
+
+input[type="checkbox"] {
+    height: 50px;
+    width: 50px;
+
+      /* Double-sized Checkboxes */
+    -ms-transform: scale(2); /* IE */
+    -moz-transform: scale(2); /* FF */
+    -webkit-transform: scale(2); /* Safari and Chrome */
+    -o-transform: scale(2); /* Opera */
+    transform: scale(2);
+    padding: 10px;
+}
+
+/* Cross out task if box is checked*/
+#task-list input:checked ~ .task {
+    text-decoration: line-through;
+    transition: 1.1s;
+}
+
+#input-task {
+    font-size: 25px;
+    height: 50px;
+    width: 400px;
+}
+
+#add-task-button {
+    font-size: 25px;
+    height: 50px;
+    width: 200px;
+}
+
+.delete-btn {
+    background-color: crimson;
+    border-radius: 50%;
+    color: white;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+}

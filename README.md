@@ -15,8 +15,3 @@ Or you can see a live demo [here](https://dan-koller.github.io/JS-To-Do-List).
 -   HTML
 -   CSS, Bootstrap
 -   JavaScript
-
-## Known issues
-
--   Page is not fully responsive
--   Not optimized for mobile devices
